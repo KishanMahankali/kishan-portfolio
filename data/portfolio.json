@@ -1,0 +1,85 @@
+{
+  "name": "Kishan Mahankali",
+  "title": "HELLO, I'M KISHAN MAHANKALI",
+  "location": "Engineering Student • Bengaluru",
+  "intro": "Curious mind. Creative builder. Future-focused engineer. Exploring technology, turning ideas into projects, and learning something new with every build.",
+  "about": "I am a curious and driven engineering student from Bengaluru with a strong interest in technology, creativity, and problem-solving. I enjoy turning ideas into working projects, learning through hands-on experience, and building solutions that have a real impact. My journey blends engineering fundamentals, creative thinking, and a passion for creating meaningful digital experiences.",
+  "profilePhoto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
+  "socials": {
+    "github": "https://github.com/KishanMahankali",
+    "linkedin": "https://www.linkedin.com/in/kishanmahankali",
+    "instagram": "https://www.instagram.com/kishanmahankali",
+    "email": "kishanmahankali.dev@gmail.com"
+  },
+  "theme": {
+    "accent": "#A6FF4D",
+    "secondary": "#A78BFA",
+    "blue": "#7DD3FC"
+  },
+  "education": [
+    {
+      "year": "2022 - Present",
+      "title": "B.E. in Computer Science / Engineering",
+      "place": "BGS College of Engineering, Bengaluru",
+      "details": "Pursuing engineering with a focus on software, problem-solving, and project-based learning."
+    },
+    {
+      "year": "2020 - 2022",
+      "title": "Pre-University / Higher Secondary Education",
+      "place": "Previous School / PU College, Bengaluru",
+      "details": "Built a strong foundation in science, mathematics, and analytical thinking."
+    }
+  ],
+  "skills": [
+    { "name": "C", "category": "Programming" },
+    { "name": "Python", "category": "Programming" },
+    { "name": "Java", "category": "Programming" },
+    { "name": "HTML", "category": "Web Development" },
+    { "name": "CSS", "category": "Web Development" },
+    { "name": "JavaScript", "category": "Web Development" },
+    { "name": "React", "category": "Frameworks" },
+    { "name": "Tailwind CSS", "category": "Frameworks" },
+    { "name": "SQL", "category": "Database" },
+    { "name": "MySQL", "category": "Database" },
+    { "name": "Git", "category": "Tools" },
+    { "name": "GitHub", "category": "Tools" },
+    { "name": "VS Code", "category": "Tools" },
+    { "name": "Problem Solving", "category": "Core Abilities" },
+    { "name": "Creative Thinking", "category": "Core Abilities" },
+    { "name": "Currently Learning", "category": "Growth" }
+  ],
+  "projects": [
+    {
+      "title": "Cosmic Portfolio",
+      "description": "A futuristic personal portfolio experience built with a cinematic landing page and interactive UI.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "image": "https://images.unsplash.com/photo-1518770660439-463ac1f7b5f1?auto=format&fit=crop&w=900&q=80",
+      "github": "https://github.com/KishanMahankali",
+      "live": "#"
+    },
+    {
+      "title": "Smart Study Planner",
+      "description": "A productivity-focused application to track tasks, study goals, and progress across weekly plans.",
+      "technologies": ["Python", "SQLite", "UI/UX"],
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80",
+      "github": "https://github.com/KishanMahankali",
+      "live": "#"
+    },
+    {
+      "title": "Innovation Dashboard",
+      "description": "A dashboard concept for visualizing personal growth, project metrics, and engineering milestones.",
+      "technologies": ["React", "CSS", "Charts"],
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+      "github": "https://github.com/KishanMahankali",
+      "live": "#"
+    }
+  ],
+  "gallery": [
+    { "title": "Profile Shot", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" },
+    { "title": "College Memory", "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" },
+    { "title": "Campus Event", "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" },
+    { "title": "Workshop", "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" },
+    { "title": "Certificate", "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" },
+    { "title": "Project Screen", "image": "https://images.unsplash.com/photo-1518770660439-463ac1f7b5f1?auto=format&fit=crop&w=900&q=80" }
+  ]
+}

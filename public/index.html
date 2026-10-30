@@ -1,0 +1,67 @@
+# Kishan Mahankali Portfolio
+
+A premium, futuristic personal portfolio website designed for Kishan Mahankali with an intro animation, responsive hero section, project showcase, gallery, contact form, and an editable admin dashboard.
+
+## Features
+- Cinematic space-themed intro animation
+- Modern dark UI with lime green, purple, and blue accents
+- About, Education, Skills, Projects, Gallery, and Contact sections
+- Responsive layout for mobile, tablet, and desktop
+- Persistent admin editing dashboard with server-side JSON storage
+- Upload support for profile photo and gallery images
+- Working contact form endpoint with optional SMTP email delivery
+- SEO metadata and accessibility-friendly design
+
+## Running locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the app:
+   ```bash
+   npm start
+   ```
+3. Open http://localhost:3000
+
+## Environment variables for contact form email
+Create a `.env` file with the following values if you want real email delivery:
+
+```bash
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+RECIPIENT_EMAIL=your-target-email@gmail.com
+```
+
+## Publishing
+
+### GitHub Pages
+This project can be deployed as a static front-end if you convert it into a build output. For a quick GitHub Pages deployment, upload the `public` folder to a GitHub Pages repo or adapt it into a Vite/React build.
+
+### Netlify / Vercel
+Use the project as a Node server running with the build command:
+```bash
+npm install && npm start
+```
+
+Set the environment variables in your hosting dashboard if using the email form.
+
+## File structure
+```text
+/
+├── data/
+│   └── portfolio.json
+├── public/
+│   ├── app.js
+│   ├── index.html
+│   └── styles.css
+├── uploads/
+├── .gitignore
+├── package.json
+├── README.md
+├── server.js
+└── .env.example
+```
