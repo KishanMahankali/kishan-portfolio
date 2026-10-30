@@ -1,67 +1,288 @@
-# Kishan Mahankali Portfolio
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Kishan Mahankali, engineering student at BGS College of Engineering, Bengaluru, India."
+    />
+    <meta name="theme-color" content="#070b13" />
+    <title>Kishan Mahankali | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="intro-screen" aria-live="polite" aria-label="Opening animation">
+      <div class="space-backdrop"></div>
+      <div class="cosmic-ring ring-one"></div>
+      <div class="cosmic-ring ring-two"></div>
+      <div class="cosmic-ring ring-three"></div>
+      <div class="big-bang"></div>
+      <div class="intro-text-wrap">
+        <p class="intro-line intro-line-one">IN THE BEGINNING, THERE WAS EVERYTHING.</p>
+        <p class="intro-line intro-line-two">KISHAN MAHANKALI — A UNIVERSE OF IDEAS</p>
+      </div>
+    </div>
 
-A premium, futuristic personal portfolio website designed for Kishan Mahankali with an intro animation, responsive hero section, project showcase, gallery, contact form, and an editable admin dashboard.
+    <div id="app-shell" class="app-shell">
+      <header class="site-header">
+        <nav class="top-nav container">
+          <a href="#home" class="brand">KM</a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a href="#contact" class="nav-cta">Let’s Connect</a>
+        </nav>
+      </header>
 
-## Features
-- Cinematic space-themed intro animation
-- Modern dark UI with lime green, purple, and blue accents
-- About, Education, Skills, Projects, Gallery, and Contact sections
-- Responsive layout for mobile, tablet, and desktop
-- Persistent admin editing dashboard with server-side JSON storage
-- Upload support for profile photo and gallery images
-- Working contact form endpoint with optional SMTP email delivery
-- SEO metadata and accessibility-friendly design
+      <main>
+        <section id="home" class="hero container">
+          <div class="hero-copy">
+            <p class="eyebrow">HELLO, I’M</p>
+            <h1 id="hero-name">Kishan Mahankali</h1>
+            <p class="subheading" id="hero-location">Engineering Student • Bengaluru</p>
+            <p class="lead" id="hero-intro">
+              Curious mind. Creative builder. Future-focused engineer. Exploring technology,
+              turning ideas into projects, and learning something new with every build.
+            </p>
+            <div class="button-row">
+              <a href="#projects" class="primary-btn">Explore My Work</a>
+              <a href="#contact" class="secondary-btn">Let’s Connect</a>
+            </div>
+            <div class="social-links" aria-label="Social media links">
+              <a id="github-link" href="https://github.com/KishanMahankali" target="_blank" rel="noreferrer">GitHub</a>
+              <a id="linkedin-link" href="https://www.linkedin.com/in/kishanmahankali" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a id="instagram-link" href="https://www.instagram.com/kishanmahankali" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
 
-## Running locally
+          <div class="hero-visual" aria-hidden="true">
+            <div class="solar-system">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="orbit orbit-three"></div>
+              <div class="planet planet-main">
+                <span>KM</span>
+              </div>
+              <div class="planet planet-small small-one"></div>
+              <div class="planet planet-small small-two"></div>
+              <div class="planet planet-small small-three"></div>
+            </div>
+          </div>
+        </section>
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the app:
-   ```bash
-   npm start
-   ```
-3. Open http://localhost:3000
+        <section id="about" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Curiosity is my starting point.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="profile-panel">
+              <img id="profile-image" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Kishan Mahankali" />
+            </div>
+            <div class="about-copy">
+              <p id="about-text">
+                I am a curious and driven engineering student from Bengaluru with a strong interest in technology, creativity, and problem-solving. I enjoy turning ideas into working projects, learning through hands-on experience, and building solutions that have a real impact. My journey blends engineering fundamentals, creative thinking, and a passion for creating meaningful digital experiences.
+              </p>
+              <ul class="about-list">
+                <li>Technology enthusiast</li>
+                <li>Creative problem-solver</li>
+                <li>Future-focused builder</li>
+                <li>Always learning</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-## Environment variables for contact form email
-Create a `.env` file with the following values if you want real email delivery:
+        <section id="education" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Learning with purpose.</h2>
+          </div>
+          <div id="education-list" class="timeline"></div>
+        </section>
 
-```bash
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=your-email@gmail.com
-SMTP_PASS=your-app-password
-RECIPIENT_EMAIL=your-target-email@gmail.com
-```
+        <section id="skills" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills & Tools</p>
+            <h2>Building ideas with focus.</h2>
+          </div>
+          <div id="skills-grid" class="skills-grid"></div>
+        </section>
 
-## Publishing
+        <section id="projects" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Turning concepts into impact.</h2>
+          </div>
+          <div id="projects-grid" class="projects-grid"></div>
+        </section>
 
-### GitHub Pages
-This project can be deployed as a static front-end if you convert it into a build output. For a quick GitHub Pages deployment, upload the `public` folder to a GitHub Pages repo or adapt it into a Vite/React build.
+        <section id="gallery" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h2>Moments, milestones, memories.</h2>
+          </div>
+          <div id="gallery-grid" class="gallery-grid"></div>
+        </section>
 
-### Netlify / Vercel
-Use the project as a Node server running with the build command:
-```bash
-npm install && npm start
-```
+        <section id="contact" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something meaningful.</h2>
+          </div>
 
-Set the environment variables in your hosting dashboard if using the email form.
+          <div class="contact-box">
+            <div class="contact-copy">
+              <p>
+                I’m open to collaboration, internships, projects, and opportunities that let me learn, create, and contribute. If you’re looking for a curious engineering student with a passion for technology and design, I’d love to connect.
+              </p>
+              <div class="contact-details">
+                <a id="email-link" href="mailto:kishanmahankali.dev@gmail.com">kishanmahankali.dev@gmail.com</a>
+                <a href="https://github.com/KishanMahankali" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/kishanmahankali" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://www.instagram.com/kishanmahankali" target="_blank" rel="noreferrer">Instagram</a>
+              </div>
+            </div>
 
-## File structure
-```text
-/
-├── data/
-│   └── portfolio.json
-├── public/
-│   ├── app.js
-│   ├── index.html
-│   └── styles.css
-├── uploads/
-├── .gitignore
-├── package.json
-├── README.md
-├── server.js
-└── .env.example
-```
+            <form id="contact-form" class="contact-form">
+              <div class="field-row two-col">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" required />
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="primary-btn submit-btn">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button id="admin-toggle" class="admin-toggle" type="button">Edit Portfolio</button>
+
+    <aside id="admin-panel" class="admin-panel" aria-label="Portfolio editor">
+      <div class="admin-header">
+        <h3>Portfolio Dashboard</h3>
+        <button id="close-admin" type="button" aria-label="Close editor">×</button>
+      </div>
+
+      <form id="admin-form" class="admin-form">
+        <div class="field">
+          <label for="admin-name">Name</label>
+          <input id="admin-name" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-title">Headline</label>
+          <input id="admin-title" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-location">Location</label>
+          <input id="admin-location" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-intro">Introduction</label>
+          <textarea id="admin-intro" rows="3"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="admin-about">About Me</label>
+          <textarea id="admin-about" rows="4"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="admin-profile-photo">Profile Photo URL</label>
+          <input id="admin-profile-photo" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-email">Email</label>
+          <input id="admin-email" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-github">GitHub</label>
+          <input id="admin-github" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-linkedin">LinkedIn</label>
+          <input id="admin-linkedin" type="text" />
+        </div>
+
+        <div class="field">
+          <label for="admin-instagram">Instagram</label>
+          <input id="admin-instagram" type="text" />
+        </div>
+
+        <div class="field-row three-col">
+          <div class="field">
+            <label for="admin-accent">Accent</label>
+            <input id="admin-accent" type="color" />
+          </div>
+          <div class="field">
+            <label for="admin-secondary">Purple</label>
+            <input id="admin-secondary" type="color" />
+          </div>
+          <div class="field">
+            <label for="admin-blue">Blue</label>
+            <input id="admin-blue" type="color" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="admin-education">Education JSON</label>
+          <textarea id="admin-education" rows="6"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="admin-skills">Skills JSON</label>
+          <textarea id="admin-skills" rows="6"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="admin-projects">Projects JSON</label>
+          <textarea id="admin-projects" rows="6"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="admin-gallery">Gallery JSON</label>
+          <textarea id="admin-gallery" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn">Save Changes</button>
+      </form>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
